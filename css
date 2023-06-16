@@ -1,1 +1,323 @@
 
+input{
+    margin-top: 10px;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+opacity: 0;
+}
+.hamburger-manu{
+margin-left: 400px;
+position: absolute;
+}
+/* стилизуем кнопку */
+.menu__btn {
+display: flex; /* используем flex для центрирования содержимого */
+align-items: center;  /* центрируем содержимое кнопки */
+position:fixed;
+top: 10px;
+left: 1400px;
+width: 26px;
+height: 26px;
+cursor: pointer;
+z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #616161;
+}
+.menu__btn > span::before {
+content: '';
+top: -8px;
+}
+.menu__btn > span::after {
+content: '';
+top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+display: block;
+position: fixed;
+visibility: hidden;
+top: 0;
+left: -100%;
+width: 300px;
+height: 100%;
+margin: 0;
+padding: 80px 0;
+list-style: none;
+text-align: center;
+background-color: #ECEFF1;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+display: block;
+padding: 12px 24px;
+color: #333;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 600;
+text-decoration: none;
+}
+.menu__item:hover {
+background-color: #CFD8DC;
+}#menu__toggle:checked ~ .menu__btn > span {
+transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+top: 0;
+transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+top: 0;
+transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+visibility: visible;
+left: 0;
+}
+.img__text{
+color: white;
+margin-top: -550px;
+margin-left: 750px;
+position: absolute;
+
+}
+#main{
+background-image: url(asia.jpeg);
+background-repeat: no-repeat;
+background-size: 99vw;
+width: 99vw;
+height: 100vh;
+display: block;
+}
+.row__top{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.row{
+    width: 30vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+}
+.jpeg{
+    background-image: url( ll.jpeg);
+width: 90vw;
+height: 70vh;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width:99vw;
+height: 50vh;
+}
+.e__lista{
+width: 50vw;
+height: 50vh;
+background-color: #333;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+color: white;
+margin-top: -10px;
+text-align: left;
+}
+.d{
+  display: flex;
+    margin-left: 400px;
+}
+.cvadrat{
+    display: flex;
+    background-color: rgb(255, 0, 0);  
+width: 150px;
+height: 150px;
+margin-top: 60px;
+}
+.dm{
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    flex-direction: row; 
+    margin-top: 159px;
+    margin-left: -370px;
+}
+.cvadrad{
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    flex-direction: row;  
+width: 150px;
+height: 95px;
+margin-top: 60px;
+
+}
+.ll{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height:80vh;
+
+}
+.m{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height:80vh;
+        background-color: aqua; 
+        margin: 10px;
+        background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+        background-repeat: no-repeat;
+        background-size: 66.6vh;
+}
+.mk{
+    display: flex;
+    flex-direction: row;
+    margin-left: 32vw;  
+    margin-top: -570px;
+}
+.nn{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 78vh;
+    background-color: #333;
+    margin-left: 95vw;
+    margin: 20px;
+    background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+}
+.da{
+    width: 150px;
+    height: 50px;
+    background-color: red;text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 46%;
+}
+
+
+.glava{
+    margin-top: 90px;
+    width: 99vw;
+    height:75vh;
+    background-color: yellowgreen   ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin: 40px;
+}
+
+.hh{
+    text-align: center;
+
+}
+.gg{
+    display: flex;
+    flex-direction: row;
+
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 50px;
+    height: 40vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: px;
+    background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: 110vh;
+}
+
+
+
+
+
+footer{
+    background-color: #333;
+    color: wheat;
+    border-radius: 15px;
+}
+.kk{
+
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9.6%;
+    background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+
+}
+.main{
+    width: 60vw;
+    background-color: #333;
+    height: 110vh;
+    background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+    background-repeat: no-repeat;
+    background-size: 160vh;
+}
+.ss{
+    width: 80vw;
+    height: 110vh;
+    background-color: #ff0000;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
+}
+.ks{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9.6%;
+    margin-top: 20px;
+}
+.mail{
+    width: 60vw;
+    background-color: #CFD8DC;
+    height: 110vh;
+    background-image: url(robot-hand-reaching-gesture-holding-260nw-682413778.webp);
+    background-repeat: no-repeat;
+    background-size: 150vh
+}
+.bb{
+    width: 80vw;
+    height: 110vh;
+    background-color: #ff0000;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
+}
